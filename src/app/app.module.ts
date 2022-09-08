@@ -18,7 +18,6 @@ import { Footer9Component } from './elements/footer/footer9/footer9.component';
 import { Footer10Component } from './elements/footer/footer10/footer10.component';
 import { Footer11Component } from './elements/footer/footer11/footer11.component';
 import { Footer12Component } from './elements/footer/footer12/footer12.component';
-import { AboutUs1Component } from './pages/about-us1/about-us1.component';
 import { AboutUs2Component } from './pages/about-us2/about-us2.component';
 import { Services1Component } from './pages/services1/services1.component';
 import { Services2Component } from './pages/services2/services2.component';
@@ -154,11 +153,14 @@ import { CommentForm1Component } from './elements/forms/comment-form1/comment-fo
 import { Content16Component } from './elements/content-box/content16/content16.component';
 import { OwlSlider1Component } from './elements/sliders/owl-slider1/owl-slider1.component';
 import { Courses5Component } from './elements/courses/courses5/courses5.component';
-import {HttpClientModule} from "@angular/common/http";
-import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HeaderLight3Component} from './elements/header/header-light3/header-light3.component';
-import { ParentProfileComponent } from './pages/parent-profile/parent-profile.component';
-import { ChoiceRoleComponent } from './pages/choice-role/choice-role.component'
+import { ProfileComponent } from './profile/profile.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+import {authInterceptorProviders} from './interceptors/auth.interceptor';
+import {AboutUs1Component} from './pages/about-us1/about-us1.component';
 
 
 
@@ -179,7 +181,6 @@ import { ChoiceRoleComponent } from './pages/choice-role/choice-role.component'
     Footer10Component,
     Footer11Component,
     Footer12Component,
-    AboutUs1Component,
     AboutUs2Component,
     Services1Component,
     Services2Component,
@@ -308,20 +309,22 @@ import { ChoiceRoleComponent } from './pages/choice-role/choice-role.component'
     Content16Component,
     OwlSlider1Component,
     Courses5Component,
-    ParentProfileComponent,
-    ChoiceRoleComponent
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardUserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
