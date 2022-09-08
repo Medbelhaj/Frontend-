@@ -156,7 +156,9 @@ import { OwlSlider1Component } from './elements/sliders/owl-slider1/owl-slider1.
 import { Courses5Component } from './elements/courses/courses5/courses5.component';
 import {HttpClientModule} from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
-import {HeaderLight3Component} from './elements/header/header-light3/header-light3.component'
+import {HeaderLight3Component} from './elements/header/header-light3/header-light3.component';
+import { ParentProfileComponent } from './pages/parent-profile/parent-profile.component';
+import { ChoiceRoleComponent } from './pages/choice-role/choice-role.component'
 
 
 
@@ -305,7 +307,9 @@ import {HeaderLight3Component} from './elements/header/header-light3/header-ligh
     CommentForm1Component,
     Content16Component,
     OwlSlider1Component,
-    Courses5Component
+    Courses5Component,
+    ParentProfileComponent,
+    ChoiceRoleComponent
   ],
   imports: [
     BrowserModule,

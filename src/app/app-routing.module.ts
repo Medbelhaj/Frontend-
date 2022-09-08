@@ -59,11 +59,13 @@ import { SingleSidebarComponent } from './blog/single-sidebar/single-sidebar.com
 import { SingleSidebarLeftComponent } from './blog/single-sidebar-left/single-sidebar-left.component';
 
 import { ContactUs3Component } from './pages/contact-us3/contact-us3.component';
+import { ParentProfileComponent } from './pages/parent-profile/parent-profile.component';
+import { ChoiceRoleComponent } from './pages/choice-role/choice-role.component';
 
 
 
 const routes: Routes = [
-	{path: '', component: HomeUniversityComponent},
+	{path: '', component: ChoiceRoleComponent},
 	{path: 'index', component: HomeUniversityComponent},
 	{path: 'home-university', component: HomeUniversityComponent},
 
@@ -89,6 +91,7 @@ const routes: Routes = [
 	{path: 'faq-1', component: FaqsComponent},
 	{path: 'teacher', component: TeachersComponent},
 	{path: 'teachers-profile', component: TeachersProfileComponent},
+	{path: 'parent-profile', component: ParentProfileComponent},
 	{path: 'courses', component: CourcesComponent},
 	{path: 'courses-details', component: CourcesDetailsComponent},
 	{path: 'event', component: EventsComponent},

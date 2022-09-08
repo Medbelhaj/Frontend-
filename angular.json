@@ -25,6 +25,7 @@
             ],
             "styles": [
               "src/assets/css/plugins.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/plugins/fontawesome/css/font-awesome.min.css",
               "src/assets/plugins/line-awesome/css/line-awesome.min.css",
               "src/assets/plugins/flaticon/flaticon.css",
@@ -33,7 +34,7 @@
               "src/assets/css/templete.min.css",
               "src/assets/css/skin/skin-1.css",
               "src/assets/plugins/revolution/revolution/css/revolution.min.css",
-              "src/assets/css/coming-soon.min.css",
+              "src/assets/css/coming-soon.min.css"
             ],
             "scripts": [
 					"src/assets/js/jquery.min.js",
@@ -60,7 +61,7 @@
 					"src/assets/js/rev-all.js",
 					"src/assets/js/jquery.star-rating-svg.js",
 					"src/assets/js/rev.slider.js",
-					"src/assets/js/custom.js",
+					"src/assets/js/custom.js"
 				]
           },
           "configurations": {

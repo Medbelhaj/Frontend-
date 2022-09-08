@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teachers-profile.component.css']
 })
 export class TeachersProfileComponent implements OnInit {
-
+roleUser = "TC"
 banner : any = {
 		
 		pagetitle: "Teachers Profile",
