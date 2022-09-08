@@ -1,8 +1,9 @@
-export class Utilisateur {
-    id?: any;
-    nom?: string;
-    prenom?: string;
-    email?: string;
-    mdp?: string;
-    dateNai?: Date;
+export interface Utilisateur {
+  username: string;
+  lastname: string;
+  email: string;
+  password: string;
+  cin: any;
+  numeroTel: any;
+  dateNai: Date;
 }

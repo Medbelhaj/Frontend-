@@ -22,41 +22,41 @@
 					<div class="col-lg-12 m-b30">
 						<div class="p-a30 border-1  max-w500 m-auto">
 							<div class="tab-content">
-								<form id="login" class="tab-pane active" (ngSubmit)="onsubmitted()">
-									<h4 class="font-weight-700">INFORMATIONS PERSONNELLES</h4>
+                <form id="login" class="tab-pane active" (ngSubmit)="onSubmit()">
+                <h4 class="font-weight-700">INFORMATIONS PERSONNELLES</h4>
 									<p class="font-weight-600">Si vous avez un compte chez nous, veuillez vous connecter.</p>
 									<div class="form-group">
 										<label class="font-weight-700">Nom *</label>
-										<input name="dzName" required [(ngModel)]="parent.nom" class="form-control" placeholder="Nom" id="nom" type="text">
+										<input name="dzName" required [(ngModel)]="form.username" class="form-control" placeholder="Nom" id="nom" type="text">
 									</div>
 									<div class="form-group">
 										<label class="font-weight-700">Prénom *</label>
-										<input name="dzName" required [(ngModel)]="parent.prenom" class="form-control" placeholder="Prénom" type="text">
+										<input name="dzName" required [(ngModel)]="form.lastname" class="form-control" placeholder="Prénom" type="text">
 									</div>
 									<div class="form-group">
 										<label class="font-weight-700">E-MAIL *</label>
-										<input name="dzName" required [(ngModel)]="parent.email" class="form-control" placeholder=" Email " type="email">
+										<input name="dzName" required [(ngModel)]="form.email" class="form-control" placeholder=" Email " type="email">
 									</div>
 									<div class="form-group">
 										<label class="font-weight-700">Mot De Passe *</label>
-										<input name="dzName" required [(ngModel)]="parent.mdp" class="form-control " placeholder="Type Mot De Passe" type="password">
+										<input name="dzName" required [(ngModel)]="form.password" class="form-control " placeholder="Type Mot De Passe" type="password">
 									</div>
 									<div class="form-group">
 										<label class="font-weight-700">CIN *</label>
-										<input name="dzName" required [(ngModel)]="parent.cin" class="form-control" placeholder="CIN" id="cin" type="number" minlength="8" maxlength="8">
+										<input name="dzName" required [(ngModel)]="form.cin" class="form-control" placeholder="CIN" id="cin" type="text" minlength="8" maxlength="8">
 									</div>
 									<div class="form-group">
 										<label class="font-weight-700">Numéro de télèphone *</label>
-										<input name="dzName" required [(ngModel)]="parent.num" class="form-control" placeholder="Phone" id="num" type="number">
+										<input name="dzName" required [(ngModel)]="form.numeroTel" class="form-control" placeholder="Phone" id="num" type="text">
 									</div>
 									<div class="form-group">
 										<label class="font-weight-700">Date Naissance *</label>
-										<input name="dzName" required [(ngModel)]="parent.dateNai" class="form-control" placeholder="dateNai" id="nom" type="date">
+										<input name="dzName" required [(ngModel)]="form.dateNai" class="form-control" placeholder="dateNai" type="date">
 									</div>
 									<div class="text-left m-t15">
 										<button class="site-button button-lg radius-no outline outline-2">CRÉER</button>
 									</div>
-									
+
 								</form>
 							</div>
 						</div>
