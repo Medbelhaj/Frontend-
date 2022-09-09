@@ -1,11 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeUniversityComponent } from './home-university/home-university.component';
-
 import { Footer1Component } from './elements/footer/footer1/footer1.component';
 import { Footer2Component } from './elements/footer/footer2/footer2.component';
 import { Footer3Component } from './elements/footer/footer3/footer3.component';
@@ -53,9 +51,7 @@ import { Grid4Component } from './blog/grid4/grid4.component';
 import { SingleComponent } from './blog/single/single.component';
 import { SingleSidebarComponent } from './blog/single-sidebar/single-sidebar.component';
 import { SingleSidebarLeftComponent } from './blog/single-sidebar-left/single-sidebar-left.component';
-
 import { ContactUs3Component } from './pages/contact-us3/contact-us3.component';
-
 import { Slider1Component } from './elements/rev-slider/slider1/slider1.component';
 import { Courses1Component } from './elements/courses/courses1/courses1.component';
 import { Newsletter1Component } from './elements/newsletter/newsletter1/newsletter1.component';
@@ -109,14 +105,9 @@ import { Content10Component } from './elements/content-box/content10/content10.c
 import { Slider6Component } from './elements/rev-slider/slider6/slider6.component';
 import { Gallery3Component } from './elements/gallery/gallery3/gallery3.component';
 import { Banner1Component } from './elements/banners/banner1/banner1.component';
-
 import { HeaderStyle3Component } from './features/header-style3/header-style3.component';
-
 import { Banner3Component } from './elements/banners/banner3/banner3.component';
-
-
 import { Banner5Component } from './elements/banners/banner5/banner5.component';
-
 import { Content11Component } from './elements/content-box/content11/content11.component';
 import { Team3Component } from './elements/team/team3/team3.component';
 import { FooterStyle1Component } from './features/footer-style1/footer-style1.component';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { StorageService } from '../../services/storage.service';
 @Component({
   selector: 'app-teachers-profile',
   templateUrl: './teachers-profile.component.html',
@@ -13,10 +13,9 @@ banner : any = {
 		bg_image: "assets/images/banner/bnr4.jpg",
 		title: "Teachers Profile",
 	}
-	
-  constructor() { }
-
+	currentUser: any;
+  constructor(private storageService: StorageService) { }
   ngOnInit(): void {
+    this.currentUser = this.storageService.getUser();
   }
-
 }
