@@ -17,7 +17,6 @@ import { FooterStyle10Component } from './features/footer-style10/footer-style10
 import { FooterStyle11Component } from './features/footer-style11/footer-style11.component';
 import { FooterStyle12Component } from './features/footer-style12/footer-style12.component';
 
-import { AboutUs1Component } from './pages/about-us1/about-us1.component';
 import { AboutUs2Component } from './pages/about-us2/about-us2.component';
 import { Services1Component } from './pages/services1/services1.component';
 import { Services2Component } from './pages/services2/services2.component';
@@ -57,7 +56,7 @@ import { Grid4Component } from './blog/grid4/grid4.component';
 import { SingleComponent } from './blog/single/single.component';
 import { SingleSidebarComponent } from './blog/single-sidebar/single-sidebar.component';
 import { SingleSidebarLeftComponent } from './blog/single-sidebar-left/single-sidebar-left.component';
-
+import { UpdateProfileComponent } from './update-profile/update-profile.component'
 import { ContactUs3Component } from './pages/contact-us3/contact-us3.component';
 import { ParentProfileComponent } from './pages/parent-profile/parent-profile.component';
 import { ChoiceRoleComponent } from './pages/choice-role/choice-role.component';
@@ -83,7 +82,6 @@ const routes: Routes = [
 	{path: 'footer-11', component: FooterStyle11Component},
 	{path: 'footer-12', component: FooterStyle12Component},
 	
-	{path: 'about-1', component: AboutUs1Component},
 	{path: 'about-2', component: AboutUs2Component},
 	{path: 'about-2', component: AboutUs2Component},
 	{path: 'services-1', component: Services1Component},
@@ -124,7 +122,7 @@ const routes: Routes = [
 	{path: 'blog-single', component: SingleComponent},
 	{path: 'blog-single-sidebar', component: SingleSidebarComponent},
 	{path: 'blog-single-left-sidebar', component: SingleSidebarLeftComponent},
-	
+	{path: 'update-profil/:ide', component: UpdateProfileComponent},
 
 	{path: 'contact-3', component: ContactUs3Component},
 

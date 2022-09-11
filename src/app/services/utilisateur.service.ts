@@ -16,12 +16,12 @@ export class UtilisateurService {
     return this.http.post(environment.api+'/addutilisateur', utilisateur);
   }
   getutilisateurId(id: number): Observable<any>{
-    return this.http.get(environment.api+'/utilisateur/'+id);
+    return this.http.get(environment.api+'/user/'+id);
   }
   Deleteutilisateur(id:number): Observable<any>{
     return this.http.delete(environment.api+'/delete/'+id, { responseType: 'text'});
   }
-  updateutilisateur(id: number): Observable<any>{
-    return this.http.put(environment.api+'/update/'+id, { ResponseType:'text'} );
+  updateUser(id: number, value: any): Observable<Object> {
+    return this.http.put(environment.api+'/updateutilisateur/'+id, value);
   }
 }

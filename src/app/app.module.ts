@@ -151,7 +151,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import {authInterceptorProviders} from './interceptors/auth.interceptor';
-import {AboutUs1Component} from './pages/about-us1/about-us1.component';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
 
 
 
@@ -303,6 +303,7 @@ import {AboutUs1Component} from './pages/about-us1/about-us1.component';
     ProfileComponent,
     BoardAdminComponent,
     BoardUserComponent,
+    UpdateProfileComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,75 @@
+<div class="page-wraper">
+
+    <!-- header -->
+    <app-header-light3></app-header-light3>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <app-banner1 [data] = "banner"></app-banner1>
+        <!-- inner page banner END -->
+        <!-- contact area -->
+        <div class="section-full content-inner shop-account">
+            <!-- Product -->
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="font-weight-700 m-t0 m-b40">MODIFIER PROFIL</h2>
+					</div>
+				</div>
+                <div class="row">
+					<div class="col-lg-12 m-b30">
+						<div class="p-a30 border-1  max-w500 m-auto">
+							<div class="tab-content">
+                <form id="login" class="tab-pane active" (ngSubmit)="onSubmit()">
+                <h4 class="font-weight-700">INFORMATIONS PERSONNELLES</h4>
+									<p class="font-weight-600">Si vous avez un compte chez nous, veuillez vous connecter.</p>
+									<div class="form-group">
+										<label class="font-weight-700">Nom *</label>
+										<input name="username" required [(ngModel)]="user.username" class="form-control" placeholder="Nom" id="nom" type="text">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-700">Prénom *</label>
+										<input name="lastname" required [(ngModel)]="user.lastname" class="form-control" placeholder="Prénom" type="text">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-700">E-MAIL *</label>
+										<input name="email" required [(ngModel)]="user.email" class="form-control" placeholder=" Email " type="email">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-700">CIN *</label>
+										<input name="cin" required [(ngModel)]="user.cin" class="form-control" placeholder="CIN" id="cin" type="text" minlength="8" maxlength="8">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-700">Numéro de télèphone *</label>
+										<input name="numeroTel" required [(ngModel)]="user.numeroTel" class="form-control" placeholder="Phone" id="num" type="text">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-700">Date Naissance *</label>
+										<input name="dateNai" required [(ngModel)]="user.dateNai" class="form-control" placeholder="dateNai" type="date">
+									</div>
+									<div class="text-left m-t15">
+										<button type="submit"  class="site-button button-lg radius-no outline outline-2">MODIFIER</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- Product END -->
+		</div>
+		<!-- Shop Service info -->
+		<app-icon-box4></app-icon-box4>
+		<!-- Shop Service info End -->
+    </div>
+    <!-- Content END-->
+    <!-- Newsletter -->
+	<app-newsletter2></app-newsletter2>
+   <!-- Footer -->
+    <app-footer13></app-footer13>
+    <!-- Footer END-->
+    <button class="scroltop fa fa-chevron-up" ></button>
+                
+</div>
